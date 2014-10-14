@@ -4,6 +4,8 @@ if (window.location.protocol != "https:") {
    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
 }
 
+/*
+
 //Setup the Facebook SDK
 window.fbAsyncInit = function() {
 	FB.init({
@@ -21,8 +23,11 @@ window.fbAsyncInit = function() {
  fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
+*/
+
  //DO the manual FB login
 function loginFB() {
     console.log("Starting Facebook login");
     window.location.href = 'https://www.facebook.com/dialog/oauth?client_id=748913388496088&redirect_uri=https://www.facebook.com/connect/login_success.html';
 }
+
