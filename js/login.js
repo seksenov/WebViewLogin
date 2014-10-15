@@ -29,5 +29,8 @@ window.fbAsyncInit = function() {
 function loginFB() {
     console.log("Starting Facebook login");
     window.location.href = 'https://www.facebook.com/dialog/oauth?client_id=748913388496088&redirect_uri=https://www.facebook.com/connect/login_success.html';
+
+    console.log('Successful login for: ' + response.name);
+    document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.name + '!';
 }
 
