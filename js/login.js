@@ -36,3 +36,18 @@ function loginFB() {
     //https://wvlogin.azurewebsites.net/loggedIn
 }
 
+function getUser() {
+	FB.getLoginStatus(function(response) {
+    if (response.status === 'connected') {
+      var userID = response.authResponse.userID;
+      console.log('Logged in.');
+      console.log('The user id is: ' + userID);
+    }
+    else {
+      //FB.login();
+      console.log('Not logged in');
+      window.location.href = "Index.html";
+    }
+  });
+}
+
