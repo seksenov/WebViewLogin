@@ -4,7 +4,7 @@ if (window.location.protocol != "https:") {
    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
 }
 
-/*
+
 
 //Setup the Facebook SDK
 window.fbAsyncInit = function() {
@@ -23,7 +23,7 @@ window.fbAsyncInit = function() {
  fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-*/
+
 
  //DO the manual FB login
 function loginFB() {
