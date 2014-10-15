@@ -28,10 +28,10 @@ window.fbAsyncInit = function() {
  //DO the manual FB login
 function loginFB() {
     console.log("Starting Facebook login");
-    window.location.href = 'https://www.facebook.com/dialog/oauth?client_id=748913388496088&redirect_uri=https://wvlogin.azurewebsites.net/loggedIn';
+    window.location.href = 'https://www.facebook.com/dialog/oauth?client_id=748913388496088&redirect_uri=https://wvlogin.azurewebsites.net/loggedIn.html';
 
-    console.log('Successful login for: ' + response.name);
-    document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.name + '!';
+    //console.log('Successful login for: ' + response.name);
+   //document.getElementById('status').innerHTML = 'Thanks for logging in, ' + response.name + '!';
 
     //https://wvlogin.azurewebsites.net/loggedIn
 }
